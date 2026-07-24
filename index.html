@@ -3,761 +3,344 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniel Mendoza — Filmmaker & Videographer · Yakima Valley</title>
-<meta name="description" content="Documentary, sports, and event video work from the Yakima Valley. If there's something meaningful in your community worth filming, I'll come shoot it for under $200.">
-
-<!-- Open Graph / social sharing previews -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Daniel Mendoza — Filmmaker & Videographer">
-<meta property="og:description" content="Documentary, sports, and event video work from the Yakima Valley. If there's something meaningful in your community worth filming, I'll come shoot it for under $200.">
-<meta property="og:image" content="https://yourdomain.com/og-image.jpg">
-<!-- Replace og:image with a 1200×630 hosted image once you have one. Without it, link previews will show no image. -->
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Favicon: inline SVG monogram, no external file needed -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1816'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' font-weight='600' text-anchor='middle' fill='%23f4f1ea'%3ED%3Ctspan fill='%23ff8866'%3EM%3C/tspan%3E%3C/text%3E%3C/svg%3E">
-
+<title>Mendoza Video</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #faf8f4;
-    --ink: #1a1816;
-    --ink-soft: #6b665d;
-    --rule: #d8d2c4;
-    --accent: #b8421f;
-    --card: #ffffff;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
-
-  /* === HEADER === */
-  header {
-    padding: 28px 0;
-    border-bottom: 1px solid var(--rule);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-
-  .logo em { font-style: italic; color: var(--accent); }
-
-  nav { display: flex; gap: 28px; }
-
-  nav a {
-    color: var(--ink);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-    transition: border-color 0.2s, color 0.2s;
-  }
-
-  nav a:hover { border-bottom-color: var(--accent); color: var(--accent); }
-
-  /* === HERO === */
-  .hero {
-    padding: 80px 0 50px;
-    text-align: center;
-    max-width: 760px;
-    margin: 0 auto;
-  }
-
-  .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(40px, 7vw, 72px);
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-  }
-
-  .hero h1 em { font-style: italic; color: var(--accent); }
-
-  .hero p {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
-    line-height: 1.5;
-    color: var(--ink-soft);
-  }
-
-  /* === SHOWREEL === */
-  .reel {
-    padding: 30px 0 60px;
-  }
-
-  .reel-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
-  }
-
-  .reel-frame iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  .reel-caption {
-    text-align: center;
-    margin-top: 14px;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  /* === SERVICES === */
-  .services {
-    padding: 50px 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-
-  .service h4 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: -0.005em;
-    margin-bottom: 8px;
-  }
-
-  .service h4 em { font-style: italic; color: var(--accent); }
-
-  .service p {
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--ink-soft);
-  }
-
-  /* === SECTION HEADS === */
-  .section-head {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 70px 0 32px;
-  }
-
-  .section-head h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: -0.01em;
-    white-space: nowrap;
-  }
-
-  .section-head h2 em { font-style: italic; }
-
-  .section-head .rule {
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
-  }
-
-  /* === VIDEO GRID === */
-  .videos {
-    padding-bottom: 40px;
-  }
-
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-
-  .video-card {
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .video-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  }
-
-  .video-embed {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
-  }
-
-  .video-embed iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  .video-info { padding: 20px 22px 24px; }
-
-  .video-meta {
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-bottom: 8px;
-  }
-
-  .video-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-
-  .video-title em { font-style: italic; }
-
-  .video-desc {
-    font-size: 14px;
-    color: var(--ink-soft);
-    line-height: 1.55;
-  }
-
-  /* === ABOUT === */
-  .about {
-    padding: 50px 0 70px;
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 56px;
-    align-items: start;
-  }
-
-  .about-photo {
-    width: 280px;
-    height: 280px;
-    border-radius: 4px;
-    background: var(--ink);
-    color: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 96px;
-    font-weight: 400;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .about-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .about-photo em { color: #ff8866; }
-
-  .about-body p {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
-    line-height: 1.55;
-    margin-bottom: 16px;
-  }
-
-  .about-body p:last-child { margin-bottom: 0; }
-
-  .about-body em { font-style: italic; }
-
-  .about-label {
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-bottom: 16px;
-  }
-
-  /* === CONTACT === */
-  .contact {
-    background: var(--ink);
-    color: #f0ede5;
-    padding: 80px 32px;
-  }
-
-  .contact-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
-  }
-
-  .contact-intro h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-  }
-
-  .contact-intro h2 em { font-style: italic; color: #ff8866; }
-
-  .contact-intro p {
-    font-family: 'Fraunces', serif;
-    font-size: 17px;
-    line-height: 1.5;
-    color: #c9c3b3;
-    margin-bottom: 24px;
-  }
-
-  .process-note {
-    background: rgba(255, 136, 102, 0.08);
-    border-left: 2px solid #ff8866;
-    padding: 14px 18px;
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 1.55;
-    color: #e5dfd0;
-  }
-
-  .process-note strong {
-    color: #ff8866;
-    font-weight: 500;
-  }
-
-  .contact-info {
-    list-style: none;
-    border-top: 1px solid #3a3733;
-    margin-top: 24px;
-  }
-
-  .contact-info li {
-    border-bottom: 1px solid #3a3733;
-    padding: 14px 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-  }
-
-  .contact-info .label {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 11px;
-    color: #8a857a;
-  }
-
-  .contact-info a {
-    color: #f0ede5;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
-  }
-
-  .contact-info a:hover { border-bottom-color: #ff8866; }
-
-  /* === FORM === */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
-
-  .field { display: flex; flex-direction: column; gap: 6px; }
-
-  .field label {
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #8a857a;
-  }
-
-  .field input, .field select, .field textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #3a3733;
-    padding: 10px 0;
-    color: #f0ede5;
-    font-family: inherit;
-    font-size: 15px;
-    transition: border-color 0.2s;
-    outline: none;
-  }
-
-  .field input:focus, .field select:focus, .field textarea:focus {
-    border-bottom-color: #ff8866;
-  }
-
-  .field textarea {
-    resize: vertical;
-    min-height: 100px;
-    font-family: inherit;
-  }
-
-  .field select option { background: #1a1816; }
-
-  button[type="submit"] {
-    background: #ff8866;
-    color: #1a1816;
-    border: none;
-    padding: 16px 28px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    align-self: flex-start;
-    margin-top: 8px;
-    border-radius: 2px;
-    transition: background 0.2s, transform 0.1s, opacity 0.2s;
-  }
-
-  button[type="submit"]:hover:not(:disabled) { background: #ffa085; }
-  button[type="submit"]:active { transform: translateY(1px); }
-  button[type="submit"]:disabled {
-    opacity: 0.55;
-    cursor: wait;
-  }
-
-  .form-status {
-    font-size: 14px;
-    color: #ff8866;
-    margin-top: 12px;
-    min-height: 20px;
-  }
-
-  /* === FOOTER === */
-  footer {
-    padding: 40px 0 32px;
-    border-top: 1px solid var(--rule);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 13px;
-    color: var(--ink-soft);
-  }
-
-  .footer-copy {
-    letter-spacing: 0.03em;
-  }
-
-  .footer-socials {
-    display: flex;
-    gap: 24px;
-  }
-
-  .footer-socials a {
-    color: var(--ink);
-    text-decoration: none;
-    font-size: 13px;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-    transition: border-color 0.2s, color 0.2s;
-  }
-
-  .footer-socials a:hover {
-    border-bottom-color: var(--accent);
-    color: var(--accent);
-  }
-
-  /* === RESPONSIVE === */
-  @media (max-width: 800px) {
-    .services-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .about-grid { grid-template-columns: 1fr; gap: 28px; }
-    .about-photo { width: 180px; height: 180px; font-size: 64px; margin: 0 auto; }
-  }
-
-  @media (max-width: 720px) {
-    .container { padding: 0 20px; }
-    nav { gap: 18px; }
-    .video-grid { grid-template-columns: 1fr; gap: 24px; }
-    .contact { padding: 60px 20px; }
-    .contact-inner { grid-template-columns: 1fr; gap: 40px; }
-    .form-row { grid-template-columns: 1fr; }
-    .hero { padding: 50px 0 30px; }
-    .section-head { margin: 50px 0 24px; }
-    footer { flex-direction: column; align-items: flex-start; }
-  }
+:root{
+  --paper:#FEFEFE;
+  --ink:#141414;
+  --soft:#5A5A5A;
+  --hair:#DDDDDD;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'EB Garamond',Garamond,'Times New Roman',serif;
+  font-size:19px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 48px}
+
+/* ── CARD ───────────────────────────────────── */
+.card{padding:64px 0 150px}
+.corners{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.corners div:last-child{text-align:right}
+.corners a{color:var(--ink);text-decoration:none}
+.corners a:hover{text-decoration:underline}
+.lg{font-size:1.5rem;line-height:1.35}
+.sm{font-size:1.15rem;line-height:1.35;color:var(--soft)}
+
+.centerpiece{text-align:center;padding:120px 0 0}
+h1{
+  font-weight:400;
+  font-size:clamp(2.6rem,7.2vw,4.6rem);
+  line-height:1.05;
+}
+h1 .caps{text-transform:uppercase}
+.title{font-size:clamp(1.35rem,3vw,1.85rem);color:var(--ink);margin-top:14px}
+
+.address{text-align:center;margin-top:150px;font-size:1.1rem}
+
+/* ── NAV ────────────────────────────────────── */
+nav{text-align:center;padding-bottom:110px}
+nav a{
+  color:var(--soft);text-decoration:none;font-size:1.05rem;
+  margin:0 22px;
+}
+nav a:hover,nav a:focus-visible{color:var(--ink);text-decoration:underline}
+
+/* ── SECTIONS ───────────────────────────────── */
+section{padding-bottom:120px}
+h2{
+  font-weight:400;font-size:1.05rem;color:var(--soft);
+  text-align:center;margin-bottom:64px;
+}
+
+/* ── JOURNAL ────────────────────────────────── */
+.entry{
+  max-width:640px;margin:0 auto 52px;text-align:center;
+  cursor:pointer;
+}
+.entry:last-child{margin-bottom:0}
+.entry-date{font-size:1rem;color:var(--soft)}
+.entry-title{
+  font-weight:400;font-size:1.85rem;line-height:1.25;margin-top:6px;
+  display:inline-block;
+}
+.entry:hover .entry-title,.entry:focus-visible .entry-title{text-decoration:underline}
+.entry:focus-visible{outline:none}
+.entry-dek{color:var(--soft);margin-top:8px}
+.entry-body{display:none;margin-top:28px;text-align:left}
+.entry-body p{margin-bottom:16px}
+.entry-body p:last-child{margin-bottom:0}
+.entry.open .entry-body{display:block}
+
+/* ── WORK ───────────────────────────────────── */
+.piece{max-width:720px;margin:0 auto 46px;text-align:center;cursor:pointer}
+.piece:last-child{margin-bottom:0}
+.piece:focus-visible{outline:none}
+.piece h3{font-weight:400;font-size:1.6rem;display:inline-block}
+.piece:hover h3,.piece:focus-visible h3{text-decoration:underline}
+.piece p{color:var(--soft);margin-top:6px}
+.piece .watch{font-size:1rem;color:var(--soft);margin-top:10px;font-style:italic}
+.player{display:none;margin-top:26px}
+.piece.open .player{display:block}
+.frame{position:relative;width:100%;padding-bottom:56.25%;height:0}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ── PAGINATION ─────────────────────────────── */
+.pager{
+  display:flex;justify-content:center;align-items:center;gap:20px;
+  margin-top:64px;font-size:1.05rem;color:var(--soft);
+}
+.pager button{
+  font-family:inherit;font-size:1.05rem;color:var(--soft);
+  background:none;border:0;cursor:pointer;padding:4px 2px;
+}
+.pager button:hover:not(:disabled){color:var(--ink);text-decoration:underline}
+.pager button:disabled{opacity:.3;cursor:default}
+.pager .count{min-width:110px;text-align:center}
+.pager[hidden]{display:none}
+
+/* ── CONTACT ────────────────────────────────── */
+.contact{text-align:center}
+.contact p{margin-bottom:10px}
+.contact a{color:var(--ink);text-decoration:none}
+.contact a:hover{text-decoration:underline}
+
+footer{text-align:center;padding:0 0 90px;font-size:1rem;color:var(--soft)}
+
+@media(max-width:640px){
+  .wrap{padding:0 26px}
+  .card{padding:40px 0 100px}
+  .corners{flex-direction:column;gap:20px;text-align:center}
+  .corners div:last-child{text-align:center}
+  .centerpiece{padding-top:80px}
+  .address{margin-top:90px}
+  nav a{display:inline-block;margin:6px 14px}
+}
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<div class="container">
+  <header class="card">
+    <div class="corners">
+      <div>
+        <div class="lg"><a href="mailto:hello@mendozavideo.com">hello@mendozavideo.com</a></div>
+        <div class="sm">Yakima Valley &middot; Seattle</div>
+      </div>
+      <div>
+        <div class="lg">Mendoza Video</div>
+        <div class="sm">Cinematography &amp; Color</div>
+      </div>
+    </div>
 
-  <header>
-    <div class="logo">Daniel <em>Mendoza</em></div>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="centerpiece">
+      <h1>Mendoza <span class="caps">Video</span></h1>
+      <div class="title">Director &amp; Colorist</div>
+    </div>
+
+    <div class="address">Yakima Valley &middot; Seattle, Washington</div>
   </header>
 
-  <section class="hero">
-    <h1>Video work &amp; <em>storytelling</em>.</h1>
-    <p>Documentary, sports, and event films from the Yakima Valley. If there's something meaningful in your community worth filming, I'll come shoot it.</p>
-  </section>
+  <nav>
+    <a href="#journal">Journal</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- SHOWREEL — Replace src with your reel's YouTube embed URL once you make one -->
-  <section class="reel">
-    <div class="reel-frame">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="reel-caption">— Showreel · 2026 —</div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services">
-    <div class="services-grid">
-      <div class="service">
-        <h4>Senior nights &amp; <em>games</em></h4>
-        <p>Sports moments that only happen once — filmed and cut into something families and teammates will keep.</p>
-      </div>
-      <div class="service">
-        <h4>Documentaries &amp; <em>profiles</em></h4>
-        <p>Short docs about people, teams, and projects doing something worth remembering.</p>
-      </div>
-      <div class="service">
-        <h4>Season &amp; build <em>recaps</em></h4>
-        <p>A whole season of robotics, soccer, theater — condensed into something tight, paced, and honest.</p>
-      </div>
-      <div class="service">
-        <h4>Events &amp; <em>performances</em></h4>
-        <p>Recitals, shows, ceremonies, milestone events. Anything that only happens live and is worth keeping.</p>
-      </div>
+  <section id="journal">
+    <h2>Journal</h2>
+    <div id="entries"></div>
+    <div class="pager" id="journal-pager" hidden>
+      <button type="button" data-dir="-1">Previous</button>
+      <span class="count"></span>
+      <button type="button" data-dir="1">Next</button>
     </div>
   </section>
 
-  <section id="work" class="videos">
-    <div class="section-head">
-      <h2>Selected <em>Work</em></h2>
-      <span class="rule"></span>
-    </div>
-
-    <div class="video-grid">
-
-      <!-- VIDEO 1 — Replace src with your YouTube embed URL -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Soccer Senior Night" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <div class="video-meta">Senior Night · La Salle Soccer · 2026</div>
-          <h3 class="video-title">Soccer Senior <em>Night</em></h3>
-          <p class="video-desc">A short reel reimagining the journalism of a simple senior night.</p>
-        </div>
-      </div>
-
-      <!-- VIDEO 2 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Notes from the Pit" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <div class="video-meta">Documentary · Lightning Robotics · 2025</div>
-          <h3 class="video-title">Notes from the <em>Pit</em></h3>
-          <p class="video-desc">A look inside Lightning Robotics 20654 — the build season, and the engineering outsiders don't get to see.</p>
-        </div>
-      </div>
-
-      <!-- VIDEO 3 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lightning Robotics season" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <div class="video-meta">Highlight Reel · FTC Season · 2025</div>
-          <h3 class="video-title">Lightning <em>Robotics</em></h3>
-          <p class="video-desc">Highlights from a 4-meet robotics season.</p>
-        </div>
-      </div>
-
-      <!-- VIDEO 4 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Spec project" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <div class="video-meta">Spec · Personal · 2024</div>
-          <h3 class="video-title">Untitled <em>Spec Project</em></h3>
-          <p class="video-desc">A short experimental piece exploring tone, pacing, and minimal dialogue.</p>
-        </div>
-      </div>
-
+  <section id="work">
+    <h2>Selected Work</h2>
+    <div id="pieces"></div>
+    <div class="pager" id="work-pager" hidden>
+      <button type="button" data-dir="-1">Previous</button>
+      <span class="count"></span>
+      <button type="button" data-dir="1">Next</button>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="section-head">
-      <h2><em>About</em></h2>
-      <span class="rule"></span>
-    </div>
-
-    <div class="about-grid">
-      <!-- Replace this div's content with <img src="your-photo.jpg" alt="Daniel Mendoza"> when you have a photo -->
-      <div class="about-photo">D<em>M</em></div>
-
-      <div>
-        <div class="about-label">A short note from the filmmaker</div>
-        <div class="about-body">
-          <p>I'm a recent high school graduate from the Yakima Valley, heading into college this fall to pursue my degree. Filmmaking isn't my career path — it's a <em>meaningful side project</em>, and the way I stay connected to the people and places I came up around.</p>
-          <p>I don't do this for the money. If there's something meaningful in your life or your community that deserves to be filmed and remembered, reach out — I'll come to you and shoot it for <em>under $200</em>. It's my way of giving back.</p>
-        </div>
-      </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p><a href="mailto:hello@mendozavideo.com">hello@mendozavideo.com</a></p>
+      <p>Seattle, Washington</p>
     </div>
   </section>
 
-</div>
-
-<!-- CONTACT (full-bleed dark section) -->
-<section id="contact" class="contact">
-  <div class="contact-inner">
-
-    <div class="contact-intro">
-      <h2>Got something <em>meaningful</em>?</h2>
-      <p>I don't do this for the money. If there's a story, a season, an event, or a person in your community worth filming, tell me about it. I'll come to you and shoot it — it's my way of giving back.</p>
-
-      <div class="process-note">
-        <strong>How it works.</strong> Reach out and tell me what's going on. If it's something I can show up for, I'll travel to you and shoot the project for <strong>under $200</strong>. First conversations are always free.
-      </div>
-
-      <ul class="contact-info">
-        <li><span class="label">Email</span><a href="mailto:danielmendoza9054@gmail.com">danielmendoza9054@gmail.com</a></li>
-        <li><span class="label">Location</span><span>Yakima Valley, WA</span></li>
-        <li><span class="label">Response</span><span>Within 48 hours</span></li>
-      </ul>
-    </div>
-
-    <form id="contact-form" action="https://formspree.io/f/mgodvvdw" method="POST">
-      <div class="form-row">
-        <div class="field">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="project">What's the story?</label>
-        <select id="project" name="project_type">
-          <option value="">Select one</option>
-          <option value="senior-night">Senior night / sports moment</option>
-          <option value="documentary">Documentary or profile</option>
-          <option value="season-recap">Season or build recap</option>
-          <option value="event">Event or performance</option>
-          <option value="other">Something else</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label for="message">Tell me about it</label>
-        <textarea id="message" name="message" required placeholder="Tell me what's going on, who it's for, and when it's happening."></textarea>
-      </div>
-
-      <button type="submit" id="submit-btn">Send message</button>
-
-      <div class="form-status" id="form-status"></div>
-    </form>
-
-  </div>
-</section>
-
-<div class="container">
-  <footer>
-    <div class="footer-copy">© Daniel Mendoza · 2026</div>
-    <div class="footer-socials">
-      <!-- Replace the # below with your real social URLs, or delete any you don't use -->
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="#" target="_blank" rel="noopener">YouTube</a>
-      <a href="mailto:danielmendoza9054@gmail.com">Email</a>
-    </div>
-  </footer>
+  <footer>Mendoza Video</footer>
 </div>
 
 <script>
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-  const submitBtn = document.getElementById('submit-btn');
+/* ═══════════════════════════════════════════════════════════
+   HOW MANY PER PAGE — change these two numbers if you want.
+   ═══════════════════════════════════════════════════════════ */
+const PER_PAGE_JOURNAL = 4;
+const PER_PAGE_WORK    = 3;
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
-    status.textContent = '';
+/* ═══════════════════════════════════════════════════════════
+   JOURNAL — copy a block, put it at the TOP of the list.
+   body: one string per paragraph.
+   ═══════════════════════════════════════════════════════════ */
+const POSTS = [
+  {
+    date: "July 2026",
+    title: "The Sigma fp rig, finally settled",
+    dek: "Cage, monitor, SSD mount. What stayed and what got cut.",
+    body: [
+      "Write the post here. Every string in this list becomes its own paragraph.",
+      "The rig carried over from the ZV-E10 more cleanly than expected — the cheeseplate hardware all transferred, which is most of why the fp won out."
+    ]
+  },
+  {
+    date: "June 2026",
+    title: "Godox SL60W, one year in",
+    dek: "Cheap, loud, and still the light I reach for first.",
+    body: [
+      "Replace this with the actual review.",
+      "Add as many paragraphs as you want by adding more strings."
+    ]
+  }
+];
 
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
+/* ═══════════════════════════════════════════════════════════
+   WORK — youtube: the ID only, not the whole URL.
+     https://youtu.be/dQw4w9WgXcQ  ->  youtube: "dQw4w9WgXcQ"
+   Leave youtube as "" for a piece with no video.
+   ═══════════════════════════════════════════════════════════ */
+const WORK = [
+  {
+    title: "Hamlet, Reworked",
+    dek: "Corporate whistleblower short. Built a full prop kit — Zoom UI, iMessage threads, browser tabs — so every screen on camera was real.",
+    youtube: ""
+  },
+  {
+    title: "Mindful Campus Initiative",
+    dek: "Short film and companion playlist. Quiet, handheld, natural light.",
+    youtube: ""
+  },
+  {
+    title: "Seattle Grade Test",
+    dek: "Color grading test shoot with a cinematic title card. Cinema Gamut into S–Log3, Dehancer on the back end.",
+    youtube: ""
+  }
+];
+
+/* ── renderer ─────────────────────────────────────────────── */
+function paginate(opts) {
+  const host   = document.getElementById(opts.hostId);
+  const pager  = document.getElementById(opts.pagerId);
+  const count  = pager.querySelector('.count');
+  const btns   = pager.querySelectorAll('button');
+  const items  = opts.items;
+  const per    = opts.perPage;
+  const pages  = Math.max(1, Math.ceil(items.length / per));
+  let page = 0;
+
+  function draw() {
+    host.innerHTML = '';
+    if (!items.length) {
+      host.innerHTML = '<p style="text-align:center;color:var(--soft)">' + opts.empty + '</p>';
+    } else {
+      items.slice(page * per, page * per + per).forEach(function (item) {
+        host.appendChild(opts.build(item));
       });
-
-      if (response.ok) {
-        form.reset();
-        status.textContent = 'Thanks — message sent. I\'ll be in touch soon.';
-        status.style.color = '#88dd88';
-        submitBtn.textContent = 'Sent';
-      } else {
-        status.textContent = 'Something went wrong. Try emailing me directly.';
-        status.style.color = '#ff8866';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send message';
-      }
-    } catch (err) {
-      status.textContent = 'Network error. Try emailing me directly.';
-      status.style.color = '#ff8866';
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send message';
     }
-  });
-</script>
+    pager.hidden = pages < 2;
+    count.textContent = 'Page ' + (page + 1) + ' of ' + pages;
+    btns[0].disabled = page === 0;
+    btns[1].disabled = page >= pages - 1;
+  }
 
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      page += Number(b.dataset.dir);
+      page = Math.max(0, Math.min(pages - 1, page));
+      draw();
+      host.closest('section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  draw();
+}
+
+function makeToggle(el) {
+  const toggle = function () {
+    el.classList.toggle('open');
+    el.setAttribute('aria-expanded', el.classList.contains('open'));
+  };
+  el.addEventListener('click', function (e) {
+    if (e.target.closest('iframe')) return;
+    toggle();
+  });
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+  });
+}
+
+paginate({
+  hostId: 'entries', pagerId: 'journal-pager',
+  items: POSTS, perPage: PER_PAGE_JOURNAL,
+  empty: 'No entries yet.',
+  build: function (p) {
+    const el = document.createElement('article');
+    el.className = 'entry';
+    el.tabIndex = 0;
+    el.setAttribute('role', 'button');
+    el.setAttribute('aria-expanded', 'false');
+    el.innerHTML =
+      '<div class="entry-date">' + p.date + '</div>' +
+      '<h3 class="entry-title">' + p.title + '</h3>' +
+      '<p class="entry-dek">' + p.dek + '</p>' +
+      '<div class="entry-body">' + p.body.map(function (t) { return '<p>' + t + '</p>'; }).join('') + '</div>';
+    makeToggle(el);
+    return el;
+  }
+});
+
+paginate({
+  hostId: 'pieces', pagerId: 'work-pager',
+  items: WORK, perPage: PER_PAGE_WORK,
+  empty: 'No work listed yet.',
+  build: function (w) {
+    const el = document.createElement('article');
+    el.className = 'piece';
+    let html =
+      '<h3>' + w.title + '</h3>' +
+      '<p>' + w.dek + '</p>';
+    if (w.youtube) {
+      el.tabIndex = 0;
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-expanded', 'false');
+      html += '<p class="watch">Watch</p>' +
+        '<div class="player"><div class="frame">' +
+        '<iframe src="https://www.youtube-nocookie.com/embed/' + w.youtube +
+        '" title="' + w.title + '" loading="lazy" allowfullscreen ' +
+        'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>' +
+        '</div></div>';
+    } else {
+      el.style.cursor = 'default';
+    }
+    el.innerHTML = html;
+    if (w.youtube) makeToggle(el);
+    return el;
+  }
+});
+</script>
 </body>
 </html>
